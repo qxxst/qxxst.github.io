@@ -3,7 +3,6 @@ This is an archived list of various tools and software I recommended to people i
 
 Most of these descriptions were written by ChatGPT and may be outdated. We are not responsible for the contents of external websites. We acknowledge that other projects and services may also align with these values and encourage consumers to exercise critical thinking and evaluate each website and service on its own merits. Additionally, we disclose that we are not sponsored by any of the projects listed, and we have no other conflicts of interest to report.
 
-You may also find the projects on the [endorsements](https://qxxst.github.io/questmatrix/endorsements) list useful. I'll probably combine that list with this one in the future.
 ## Editing Software
 ### Kdenlive
 Kdenlive is a free and open-source video editing software for Linux, Windows, and macOS. It is known for its user-friendly interface, advanced features, and ability to handle high-definition video. Kdenlive supports a wide range of formats and can be used for tasks ranging from simple video editing to professional-level video production.
