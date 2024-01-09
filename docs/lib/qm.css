@@ -184,11 +184,4 @@ h2, h3, h4, h5, h6 {
 }
 .qm-code {
   font-family: var(--qm-code-font);
-  font-size: 1.2rem;
-  line-height: 1.5;
-  background-color: var(--qm-black);
-  color: var(--qm-white);
-  padding: 1rem;
-  border-radius: 8px;
-  overflow-x: auto;
 }
