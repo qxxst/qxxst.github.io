@@ -43,8 +43,8 @@ button:enabled{
 }
 footer {
   background-size: 300% 300%;
-  background-color: var(--qm-white);
-  color: var(--qm-black);
+  background-color: var(--qm-black);
+  color: var(--qm-white);
 }
 footer p {
   padding: 1% 20%
