@@ -9,3 +9,6 @@ All trademarks are property of their respective owners in the United States and 
 Content not explicitly listed on the [GitHub Pages website](https://qxxst.github.io) is still being worked on and might break. Files listed on the website itself are considered to be "stable" and ready for use. Files uploaded to this repository and/or published on the website are provided "as-is" and we are not obligated to modify or update them at any time, although we may choose to do so at our own discretion. The dates at which any given file was originally uploaded and last updated are available on GitHub.
 
 © Qxxst. All rights reserved. All trademarks are property of their respective owners in the United States and other countries.
+## Acknowledgments
+- W3.CSS and W3.JS are provided for free by w3schools.com.
+- Inter, Montserrat, and Inconsolata are provided for free by Google Fonts.
