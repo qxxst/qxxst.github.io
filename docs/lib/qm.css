@@ -185,3 +185,7 @@ h2, h3, h4, h5, h6 {
 .qm-code {
   font-family: var(--qm-code-font);
 }
+#title {
+  margin: 0 0;
+  padding: 2.5% 0;
+}
