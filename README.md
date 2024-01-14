@@ -12,5 +12,5 @@ Content not explicitly listed on the [GitHub Pages website](https://qxxst.github
 
 © Qxxst. All rights reserved. All trademarks are property of their respective owners in the United States and other countries.
 ## Acknowledgments
-- W3.CSS and W3.JS are provided for free by w3schools.com.
-- Inter, Montserrat, and Inconsolata are provided for free by Google Fonts.
+- W3.CSS and W3.JS by w3schools.com.
+- Inter, Montserrat, and Inconsolata by Google Fonts.
