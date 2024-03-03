@@ -10,8 +10,26 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/qxxst/qmcss@v1.5-b2/qm.css">
         <!-- <link rel="stylesheet" type="text/css" href="localtest/qm.css"> -->
         <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/qxxst/qxxst.github.io/main/docs/images/favicon.ico">
+        <script src="site.js"></script>
+        <style>
+            .w3-modal-content {
+                outline: 1px solid white;
+                padding: 0.5%;
+            }
+
+            .w3-modal {
+                backdrop-filter: blur(50px) saturate(200%);
+            }
+        </style>
     </head>
         <body class="w3-center qm-black">
+            <div id="agreementModal" class="w3-modal">
+                <div class="w3-modal-content qm-black">
+                    <p>By accessing this website or downloading files from it you agree that you are at least 18 and agree to the terms in the <a href="https://github.com/qxxst/qxxst.github.io?tab=readme-ov-file#disclaimers" target="_blank">disclaimers</a>.</p>
+                    <p>The files are provided as-is, without any warranties or guarantees of any kind, expressed or implied.</p>
+                    <button class="w3-button" id="agreeButton">I understand</button>
+                </div>
+            </div>
             <h1 id="title">Qxxst</h1>
             <div class="qm-breathing" id="content">
                 <br>
