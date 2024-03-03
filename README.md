@@ -9,6 +9,3 @@ This repository contains user-generated content that may include copyrighted mat
 All trademarks are property of their respective owners in the United States and other countries. Third-party trademarks (such as existing games or other software) are solely referenced for the sake of descriptivity, and do not imply any affiliation with or endorsement by their respective owners.
 
 © Qxxst. All rights reserved. All trademarks are property of their respective owners in the United States and other countries.
-## Acknowledgments
-- W3.CSS and W3.JS by w3schools.com.
-- Inter, Montserrat, and Inconsolata by Google Fonts.
