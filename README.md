@@ -1,5 +1,5 @@
 # qxxst.github.io
-Personal website.
+Personal website, made using HTML, CSS, JavaScript, and TypeScript.
 
 ## Disclaimers
 By accessing and downloading any files from this website, you acknowledge and agree that the owner of the website is not responsible for any consequences or damages that may arise from the use or misuse of the downloaded files. The files are provided as-is, without any warranties or guarantees of any kind, expressed or implied. Users are advised to exercise caution, perform necessary security checks, and use the downloaded files at their own risk. The website owner shall not be held liable for any loss, damage, or harm caused by the downloaded files, including but not limited to data corruption, system malfunctions, or any other adverse effects. It is the responsibility of the user to ensure the suitability and safety of the downloaded files for their intended purpose. The dates at which any given file was originally uploaded and last updated are available on GitHub.
