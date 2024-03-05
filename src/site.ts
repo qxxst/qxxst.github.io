@@ -32,11 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     content.classList.add(preAgreeBackground);
 
-    const agreedToTerms: boolean = getCookie("agreedToTerms") as unknown as boolean;
-    if (agreedToTerms == false || agreedToTerms == undefined || agreedToTerms == null) {
-        modal.style.display = 'block';
-    }
-
     function removeModal() {
         if (preAgreeBackground !== postAgreeBackground) {
             content.classList.remove(preAgreeBackground);
@@ -44,7 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         modal.style.display = 'none';
+    }
 
+    function playAudio() {
         const audioUrl: string = "https://cdn.discordapp.com/attachments/1213958929894346823/1213971035209212005/rb-2024-low-pass.wav?ex=65f769a1&is=65e4f4a1&hm=17e577a6e92742bd97f62eb41a9458ae6c8e6624973c255b683c792f577c0cda&";
         const audio = new Audio(audioUrl);
         audio.volume = 0.1;
@@ -57,8 +54,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     }
 
+    const agreedToTerms: boolean = getCookie("agreedToTerms") as unknown as boolean;
+    if (agreedToTerms == false || agreedToTerms == undefined || agreedToTerms == null) {
+        modal.style.display = 'block';
+    } else {
+        removeModal();
+        playAudio();
+    }
+
     agreeButton.addEventListener('click', function() {
         setCookie("agreedToTerms", true, 365);
         removeModal();
+        playAudio();
     });
 });
