@@ -57,11 +57,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const agreedToTerms: boolean = getCookie("agreedToTerms") as unknown as boolean;
     if (agreedToTerms == false || agreedToTerms == undefined || agreedToTerms == null) {
         modal.style.display = 'block';
-    } else {
-        if (agreedToTerms == true) {
-            removeModal();
-            playAudio();
-        }
+    }
+    if (agreedToTerms == true) {
+        removeModal();
+        playAudio();
     }
 
     agreeButton.addEventListener('click', function() {
