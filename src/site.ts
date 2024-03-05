@@ -57,15 +57,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const agreedToTerms: string = getCookie("agreedToTerms");
     if (agreedToTerms == "false" || agreedToTerms == undefined || agreedToTerms == null) {
         modal.style.display = 'block';
-        
-        agreeButton.addEventListener('click', function() {
-            setCookie("agreedToTerms", "true", 365);
-            removeModal();
-            playAudio();
-        });
     }
     if (agreedToTerms == "true") {
         removeModal();
         playAudio();
     }
+
+    agreeButton.addEventListener('click', function() {
+        setCookie("agreedToTerms", "true", 365);
+        removeModal();
+        playAudio();
+    });
 });
