@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    function setCookie(name: string, value: any, days: number) {
+    function setCookie(name: string, value: string, days: number) {
         const date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
 
