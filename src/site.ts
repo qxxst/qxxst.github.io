@@ -54,18 +54,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     }
 
-    const agreedToTerms: boolean = getCookie("agreedToTerms") as unknown as boolean;
-    if (agreedToTerms == false || agreedToTerms == undefined || agreedToTerms == null) {
+    const agreedToTerms: string = getCookie("agreedToTerms");
+    if (agreedToTerms == "false" || agreedToTerms == undefined || agreedToTerms == null) {
         modal.style.display = 'block';
+        
+        agreeButton.addEventListener('click', function() {
+            setCookie("agreedToTerms", "true", 365);
+            removeModal();
+            playAudio();
+        });
     }
-    if (agreedToTerms == true) {
+    if (agreedToTerms == "true") {
         removeModal();
         playAudio();
     }
-
-    agreeButton.addEventListener('click', function() {
-        setCookie("agreedToTerms", true, 365);
-        removeModal();
-        playAudio();
-    });
 });
