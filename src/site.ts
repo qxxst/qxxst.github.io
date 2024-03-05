@@ -58,8 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (agreedToTerms == false || agreedToTerms == undefined || agreedToTerms == null) {
         modal.style.display = 'block';
     } else {
-        removeModal();
-        playAudio();
+        if (agreedToTerms == true) {
+            removeModal();
+            playAudio();
+        }
     }
 
     agreeButton.addEventListener('click', function() {

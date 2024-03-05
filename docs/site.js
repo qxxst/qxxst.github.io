@@ -51,8 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.style.display = 'block';
     }
     else {
-        removeModal();
-        playAudio();
+        if (agreedToTerms == true) {
+            removeModal();
+            playAudio();
+        }
     }
     agreeButton.addEventListener('click', function () {
         setCookie("agreedToTerms", true, 365);
