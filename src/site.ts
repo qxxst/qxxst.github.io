@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    function setCookie(name: string, value: string, days: number) {
+    /* function setCookie(name: string, value: string, days: number) {
         const date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
 
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         return "";
-    }
+    } */
 
     const modal = document.getElementById('agreementModal') as HTMLElement;
     const agreeButton = document.getElementById('agreeButton') as HTMLElement;
@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const preAgreeBackground: string = "qm-breathing";
     const postAgreeBackground: string = "qm-breathing";
 
+    modal.style.display = 'block';
     content.classList.add(preAgreeBackground);
 
     function removeModal() {
@@ -54,17 +55,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     }
 
-    const agreedToTerms: string = getCookie("agreedToTerms");
+    /* const agreedToTerms: string = getCookie("agreedToTerms");
     if (agreedToTerms == "false" || agreedToTerms == undefined || agreedToTerms == null) {
         modal.style.display = 'block';
     }
     if (agreedToTerms == "true") {
         removeModal();
         playAudio();
-    }
+    } */
 
     agreeButton.addEventListener('click', function() {
-        setCookie("agreedToTerms", "true", 365);
+        /* setCookie("agreedToTerms", "true", 365); */
         removeModal();
         playAudio();
     });
