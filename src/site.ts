@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function playAudio() {
-        const audioUrl: string = "https://cdn.discordapp.com/attachments/1213958929894346823/1213971035209212005/rb-2024-low-pass.wav?ex=65f769a1&is=65e4f4a1&hm=17e577a6e92742bd97f62eb41a9458ae6c8e6624973c255b683c792f577c0cda&";
+        const audioUrl: string = "https://cdn.discordapp.com/attachments/1217401511542259803/1217401554840322108/rb-2024-low-pass.wav?ex=6603e48c&is=65f16f8c&hm=13653d167dc2c14e4cf8f43172843702ea5e49a2a1d0783a2dde02e128ab6733&";
         const audio = new Audio(audioUrl);
         audio.volume = 0.1;
         setTimeout(function() {
