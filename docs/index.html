@@ -15,6 +15,7 @@
         <link rel="manifest" href="manifest.json">
         <link rel="apple-touch-icon" href="images/pwa/apple-touch-icon.png">
         <script src="site.js"></script>
+        <script src="background.js"></script>
         <style>
             .w3-modal-content {
                 outline: 1px solid white;
@@ -23,6 +24,21 @@
 
             .w3-modal {
                 backdrop-filter: blur(50px) saturate(200%);
+            }
+
+            #gradient-canvas {
+                filter: blur(50px);
+                overflow-y: hidden;
+                width: 100vw;
+                min-height: 100vh;
+                --gradient-color-1: #0011fe;
+                --gradient-color-2: #34005f;
+                --gradient-color-3: rgb(42, 0, 54);
+                --gradient-color-4: #000000;
+                z-index: -1;
+                position: fixed;
+                scale: 1.8;
+                opacity: 1;
             }
         </style>
     </head>
@@ -33,9 +49,10 @@
                     <button class="w3-button" id="agreeButton">I understand</button>
                 </div>
             </div>
-            <h1 id="title">Qxxst</h1>
+            <h1 id="title" class="qm-no-margin" style="background-color: #000000; z-index: 10; position: relative; padding: 0.5% 20%;">Qxxst</h1>
             <div id="content">
                 <br>
+                <canvas id="gradient-canvas"></canvas>
                 <ul class="w3-ul w3-border qm-black qm-code">
                     <li class="qm-muted">By accessing this website or downloading files from it you agree to our <a href="https://github.com/qxxst/qxxst.github.io?tab=License-1-ov-file" target="_blank">terms of use</a>.</li>
                     <li><a href="https://github.com/qxxst/4chill" target="_blank">4chill</a> - A userscript to maximize your reading efficiency on 4chan</li>

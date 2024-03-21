@@ -15,9 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('agreementModal');
     const agreeButton = document.getElementById('agreeButton');
     const content = document.getElementById('content');
-    const preAgreeBackground = "qm-breathing";
-    const postAgreeBackground = "qm-breathing";
-    content.classList.add(preAgreeBackground);
+    const preAgreeBackground = null;
+    const postAgreeBackground = null;
+    if (preAgreeBackground !== null) {
+        content.classList.add(preAgreeBackground);
+    }
     if (localStorage.getItem("agreedToTerms") !== "true") {
         modal.style.display = 'block';
     }
@@ -25,9 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
         removeModal();
     }
     function removeModal() {
-        if (preAgreeBackground !== postAgreeBackground) {
-            content.classList.remove(preAgreeBackground);
-            content.classList.add(postAgreeBackground);
+        if (preAgreeBackground !== null && postAgreeBackground !== null) {
+            if (preAgreeBackground !== postAgreeBackground) {
+                content.classList.remove(preAgreeBackground);
+                content.classList.add(postAgreeBackground);
+            }
         }
         modal.style.display = 'none';
     }
