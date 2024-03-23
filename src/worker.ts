@@ -10,8 +10,8 @@ self.addEventListener("install", e => {
         caches.open("static").then(cache => {
             return cache.addAll([
                 "./", // index.html
-                "https://cdn.jsdelivr.net/gh/qxxst/qmcss@v1.5-b2/qm.css", 
-                "./img/pwa/android-chrome-192x192.png", 
+                "https://cdn.jsdelivr.net/gh/qxxst/qmcss@v1.5/qm.css",
+                "./img/pwa/android-chrome-192x192.png",
                 "./img/favicon.ico"
             ]);
         })
