@@ -1,6 +1,6 @@
 "use strict";
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("worker.js").then(registration => {
+    navigator.serviceWorker.register("js/worker.js").then(registration => {
         console.log("Service Worker registered.");
         console.log(registration);
     }).catch(error => {
