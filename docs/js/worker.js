@@ -4,7 +4,7 @@ self.addEventListener("install", e => {
     event.waitUntil(caches.open("static").then(cache => {
         return cache.addAll([
             "./", // index.html
-            "https://cdn.jsdelivr.net/gh/qxxst/qmcss@v1.5/qm.css",
+            "https://cdn.jsdelivr.net/gh/qxxst/qmcss@v1.6/qm.css",
             "./img/pwa/android-chrome-192x192.png",
             "./img/favicon.ico"
         ]);
